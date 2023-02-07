@@ -1,0 +1,36 @@
+@use './variaveis';
+
+.sci {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width:991px) {
+        top: 600px;
+        right: initial;
+        margin-top: 40px;
+        flex-direction: row;
+    }
+
+    &__item {
+        list-style: none;
+
+        @media (max-width:991px) {
+            margin: 0 5px;
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &__img {
+                filter: invert(1);
+                transform: scale(0.6);
+            }
+        }
+    }
+}

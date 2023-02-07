@@ -1,0 +1,70 @@
+@use './variaveis';
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    background-image: url(../../dist/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width:991px) {
+        padding: 100px 50px;
+    }
+
+    &__content {
+        max-width: 550px;
+
+        &__title {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.7em;
+            letter-spacing: .1em;
+            color: variaveis.$corTextoPrincipal;
+
+            @media (max-width:991px) {
+                font-size: 1.5em;
+                letter-spacing: 0.05em;
+            }
+
+            &--is--big {
+                font-weight: 800;
+            }
+        }
+
+        &__text {
+            font-size: 1.2em;
+            font-weight: 300;
+            letter-spacing: 0.02ems;
+            line-height: 1.5em;
+            color: variaveis.$corTextoPrincipal;
+            margin: 15px 0 35px;
+
+            @media (max-width:991px) {
+                font-size: 1em;
+            }
+        }
+
+        &__link {
+            position: relative;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: variaveis.$corTextoPrincipal;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+
+            &__img {
+                margin-right: 10px;
+                max-width: 50px;
+            }
+        }
+    }
+}

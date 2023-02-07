@@ -1,0 +1,27 @@
+@use './variaveis';
+
+.slide {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 250px / 2);
+    width: 250px;
+    height: 150px;
+    background-image: url(../../dist/images/joker.png);
+    background-size: cover;
+    cursor: pointer;
+    animation: animate 25s linear infinite;
+
+    @media (max-width:991px) {
+        visibility: hidden;
+    }
+}
+
+@keyframes animate {
+    0%,100% {
+        background-position: top;
+    }
+
+    45%, 55% {
+        background-position: bottom;
+    }
+}

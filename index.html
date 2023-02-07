@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img class="header__logo__img" src="./dist/images/logo.png" alt="Logo do Joker">
+        </a>
+        <div class="header__toggle">
+            <img class="header__toggle__img" src="./dist/images/toggle.png" alt="Toggle">
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner__content">
+            <h2 class="banner__content__title">Coloque um <span class="banner__content__title--is--big">Sorriso</span> no rosto</h2>
+            <p class="banner__content__text">Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
+            <a class="banner__content__link" href="#" onclick="toggle();"><img class="banner__content__link__img" src="./dist/images/play.png" alt="Play">Assista o Trailer</a>
+        </div>
+        <div class="slide"></div>
+        <ul class="sci">
+            <li class="sci__item"><a class="sci__item__link" href="#"><img class="sci__item__link__img" src="./dist/images/facebook.png" alt="Facebook"></a></li>
+            <li class="sci__item"><a class="sci__item__link" href="#"><img class="sci__item__link__img" src="./dist/images/instagram.png" alt="Instagram"></a></li>
+            <li class="sci__item"><a class="sci__item__link" href="#"><img class="sci__item__link__img" src="./dist/images/twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </div>
+    <div class="trailer">
+        <video class="trailer__video" src="./src/assets/coringa_trailer.mp4" controls="true"></video>
+        <img src="./dist/images/close.png" class="trailer__close" alt="close" onclick="toggle();">
+    </div>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
